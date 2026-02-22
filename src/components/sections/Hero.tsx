@@ -90,10 +90,12 @@ export default function Hero() {
               <Briefcase className="w-5 h-5" />
               View Projects
             </button>
-            <button className="group px-8 py-4 bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg font-semibold text-cyan-400 hover:bg-gray-800/80 transition-all hover:scale-105 flex items-center gap-2">
-              <Download className="w-5 h-5" />
-              Download CV
-            </button>
+            <a href="/jal_resume.pdf" download>
+  <button className="group px-8 py-4 bg-gray-800/50 backdrop-blur-sm">
+    <Download className="w-5 h-5" />
+    Download CV
+  </button>
+</a>
             <button
               onClick={scrollToContact}
               className="group px-8 py-4 bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg font-semibold text-cyan-400 hover:bg-gray-800/80 transition-all hover:scale-105 flex items-center gap-2"

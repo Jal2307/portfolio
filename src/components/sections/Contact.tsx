@@ -151,7 +151,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
           >
             <form 
-  action="https://formspree.io/f/YOUR_FORM_ID" 
+  action="https://formspree.io/f/xeelrvyg" 
   method="POST"
   className="space-y-6"
 >

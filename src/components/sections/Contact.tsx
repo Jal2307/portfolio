@@ -151,49 +151,85 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
           >
             <form 
-  action="https://formspree.io/f/xeelrvyg" 
-  method="POST"
-  className="space-y-6"
->
-  <input
-    type="text"
-    name="name"
-    placeholder="Your Name"
-    required
-    className="w-full px-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded"
-  />
+            action="https://formspree.io/f/xeelrvyg"
+            method="POST"
+            className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-6"
+            onSubmit={handleSubmit}
+          >
+              <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
 
-  <input
-    type="email"
-    name="email"
-    placeholder="Your Email"
-    required
-    className="w-full px-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded"
-  />
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors"
+                  placeholder="Your name"
+                />
+              </div>
 
-  <input
-    type="text"
-    name="subject"
-    placeholder="Subject"
-    required
-    className="w-full px-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded"
-  />
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors"
+                  placeholder="your.email@example.com"
+                />
+              </div>
 
-  <textarea
-    name="message"
-    rows="5"
-    placeholder="Your Message"
-    required
-    className="w-full px-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded"
-  ></textarea>
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors"
+                  placeholder="What's this about?"
+                />
+              </div>
 
-  <button
-    type="submit"
-    className="w-full px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded"
-  >
-    Send Message
-  </button>
-</form>
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={6}
+                  className="w-full px-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-colors resize-none"
+                  placeholder="Tell me about your opportunity or project..."
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-semibold text-white shadow-lg shadow-cyan-500/50 hover:shadow-cyan-500/80 transition-all hover:scale-105 flex items-center justify-center gap-2"
+              >
+                Send Message
+                <Send className="w-5 h-5" />
+              </button>
+            </form>
           </motion.div>
         </div>
       </div>

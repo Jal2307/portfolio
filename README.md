@@ -201,7 +201,7 @@ This project is open source and available under the MIT License.
 
 ## Contact
 
-- **Email**: jal.bagadiya@email.com
+- **Email**: jalbagadiya26@gmail.com
 - **LinkedIn**: [linkedin.com/in/jalbagadiya](https://linkedin.com/in/jalbagadiya)
 - **GitHub**: [github.com/jalbagadiya](https://github.com/jalbagadiya)
 

@@ -30,8 +30,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'jal.bagadiya@email.com',
-      href: 'mailto:jal.bagadiya@email.com',
+      value: 'jalbagadiya26@gmail.com',
+      href: 'mailto:jalbagadiya26@gmail.com',
     },
     {
       icon: Linkedin,

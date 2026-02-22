@@ -150,12 +150,49 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.6 }}
           >
-            <form action="https://formspree.io/f/xeelrvyg" method="POST">
-  <input name="name" required />
-  <input type="email" name="email" required />
-  <input name="subject" required />
-  <textarea name="message" required></textarea>
-  <button type="submit">Send Message</button>
+            <form 
+  action="https://formspree.io/f/xeelrvyg" 
+  method="POST"
+  className="space-y-6"
+>
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+    className="w-full px-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded"
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+    className="w-full px-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded"
+  />
+
+  <input
+    type="text"
+    name="subject"
+    placeholder="Subject"
+    required
+    className="w-full px-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded"
+  />
+
+  <textarea
+    name="message"
+    rows="5"
+    placeholder="Your Message"
+    required
+    className="w-full px-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded"
+  ></textarea>
+
+  <button
+    type="submit"
+    className="w-full px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded"
+  >
+    Send Message
+  </button>
 </form>
           </motion.div>
         </div>

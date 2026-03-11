@@ -42,7 +42,7 @@ export default function Hero() {
             className="inline-block"
           >
             <span className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-sm font-medium backdrop-blur-sm">
-              Available for International Opportunities
+              Available for National and International Opportunities
             </span>
           </motion.div>
 

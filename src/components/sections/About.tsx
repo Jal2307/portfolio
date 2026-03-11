@@ -59,8 +59,7 @@ export default function About() {
               <p className="text-gray-300 leading-relaxed">
                 Currently expanding expertise in DevSecOps practices, cloud security, and automation.
                 Passionate about integrating security throughout the development lifecycle and building
-                resilient systems. Actively seeking opportunities in UAE and internationally to contribute
-                to cutting-edge cybersecurity initiatives.
+                resilient systems.
               </p>
               <div className="flex flex-wrap gap-3 pt-4">
                 <span className="px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-cyan-400 text-sm">
@@ -121,7 +120,7 @@ export default function About() {
                   <div className="flex-1">
                     <h4 className="text-xl font-bold text-white mb-2">Career Goals</h4>
                     <p className="text-gray-300 text-sm">
-                      Seeking Security Analyst or DevSecOps Engineer roles in UAE or internationally.
+                      Seeking Security Analyst or DevSecOps Engineer roles nationally or internationally.
                       Focused on growing expertise in cloud security, automation, and threat intelligence.
                     </p>
                   </div>

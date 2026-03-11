@@ -45,12 +45,6 @@ export default function Contact() {
       value: 'github.com/jalbagadiya',
       href: 'https://github.com/jalbagadiya',
     },
-    {
-      icon: MapPin,
-      label: 'Location',
-      value: 'Open to UAE & International',
-      href: null,
-    },
   ];
 
   return (
@@ -67,7 +61,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Open to opportunities in UAE and internationally. Let's connect and discuss how I can contribute to your team.
+            Open to opportunities nationally and internationally. Let's connect and discuss how I can contribute to your team.
           </p>
         </motion.div>
 

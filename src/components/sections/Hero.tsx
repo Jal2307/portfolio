@@ -74,7 +74,7 @@ export default function Hero() {
           >
             Cyber Security graduate with hands-on experience in log analysis and incident investigation.
             Completed Deloitte Australia Cyber Simulation. Passionate about Cloud Security and DevSecOps.
-            Open to international opportunities in UAE and beyond.
+            Open to national and international opportunities and beyond.
           </motion.p>
 
           <motion.div
